@@ -1,0 +1,14 @@
+{
+  "name": "Hackathon",
+  "version": "v0.0.1",
+  "homepage": "https://github.com/samwalshnz/hackathon",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
