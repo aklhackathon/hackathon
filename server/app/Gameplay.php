@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @property string  code
  * @property Ruleset ruleset
+ * @property integer id
  * @property User    created_at
  * @property User    updated_at
  * @property integer turn

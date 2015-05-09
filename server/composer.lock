@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "24c3946acc997e3f3eca7fc5c99585b2",
+    "hash": "0bb57686c594e5bd239dea4d9583142e",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -618,6 +618,69 @@
             "time": "2015-03-29 14:01:43"
         },
         {
+            "name": "league/fractal",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/fractal.git",
+                "reference": "cd0d68900a3302fdb68942897c07fb338f20a44f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/fractal/zipball/cd0d68900a3302fdb68942897c07fb338f20a44f",
+                "reference": "cd0d68900a3302fdb68942897c07fb338f20a44f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "illuminate/contracts": "~5.0",
+                "mockery/mockery": "~0.9",
+                "pagerfanta/pagerfanta": "~1.0.0",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~1.5",
+                "zendframework/zend-paginator": "~2.3"
+            },
+            "suggest": {
+                "illuminate/pagination": "The Illuminate Pagination component.",
+                "pagerfanta/pagerfanta": "Pagerfanta Paginator",
+                "zendframework/zend-paginator": "Zend Framework Paginator"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.13-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Fractal\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Phil Sturgeon",
+                    "email": "me@philsturgeon.uk",
+                    "homepage": "http://philsturgeon.uk/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Handle the output of complex data structures ready for API output.",
+            "homepage": "http://fractal.thephpleague.com/",
+            "keywords": [
+                "api",
+                "json",
+                "league",
+                "rest"
+            ],
+            "time": "2015-04-28 19:22:51"
+        },
+        {
             "name": "monolog/monolog",
             "version": "1.13.1",
             "source": {
@@ -736,21 +799,21 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "1.18.0",
+            "version": "1.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "99e2f69f7bdc2cc4334b2d00f1e0ba450623ea36"
+                "reference": "68868e0b02d2d803d0052a59d4e5003cccf87320"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/99e2f69f7bdc2cc4334b2d00f1e0ba450623ea36",
-                "reference": "99e2f69f7bdc2cc4334b2d00f1e0ba450623ea36",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/68868e0b02d2d803d0052a59d4e5003cccf87320",
+                "reference": "68868e0b02d2d803d0052a59d4e5003cccf87320",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0",
-                "symfony/translation": "2.6.*"
+                "symfony/translation": "~2.6"
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.0"
@@ -779,7 +842,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2015-03-26 03:05:57"
+            "time": "2015-05-09 03:23:44"
         },
         {
             "name": "nikic/php-parser",
@@ -2824,7 +2887,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "league/fractal": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
