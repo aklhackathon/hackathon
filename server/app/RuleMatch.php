@@ -3,17 +3,11 @@
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Class Gameplay
+ * Class RuleMatch
  *
  * @package App
- *
- * @property string  code
- * @property Ruleset ruleset
- * @property User    turn
- * @property User    created_at
- * @property User    updated_at
  */
-class Gameplay extends Model {
+class RuleMatch extends Model {
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
@@ -26,8 +20,16 @@ class Gameplay extends Model {
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function turn()
+    public function rule()
     {
-        return $this->belongsTo(User::class, 'turn_id');
+        return $this->belongsTo(Rule::class);
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function card()
+    {
+        return $this->belongsTo(Card::class);
     }
 }

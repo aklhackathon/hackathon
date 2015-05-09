@@ -2,8 +2,13 @@
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Class Rule
+ *
+ * @package App
+ *
+ * @property string $description
+ */
 class Rule extends Model {
-
-	//
 
 }
