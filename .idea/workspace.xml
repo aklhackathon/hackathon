@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69758b30-8b3a-4156-8814-6fc70e6b477b" name="Default" comment="" />
+    <list default="true" id="69758b30-8b3a-4156-8814-6fc70e6b477b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/app/Gameplay.php" afterPath="$PROJECT_DIR$/server/app/Gameplay.php" />
+    </list>
     <ignored path="hackathon.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -35,14 +37,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2015_05_09_034452_change_turn_id_to_turn_number.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2015_05_09_034452_change_turn_id_to_turn_number.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/database/migrations/2015_05_09_034452_change_turn_id_to_turn_number.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.10062893" vertical-offset="0" max-vertical-offset="1272">
-              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+            <state vertical-scroll-proportion="-20.173914" vertical-offset="0" max-vertical-offset="752">
+              <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
               <folding>
                 <element signature="e#7#52#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gameplay.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/app/Gameplay.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.16352202" vertical-offset="0" max-vertical-offset="1272">
+              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -75,7 +87,6 @@
         <option value="$PROJECT_DIR$/server/.env" />
         <option value="$PROJECT_DIR$/server/.gitignore" />
         <option value="$PROJECT_DIR$/server/app/Card.php" />
-        <option value="$PROJECT_DIR$/server/app/Gameplay.php" />
         <option value="$PROJECT_DIR$/server/app/Rule.php" />
         <option value="$PROJECT_DIR$/server/database/migrations/2015_05_09_020444_delete_ruleset_has_rules_table.php" />
         <option value="$PROJECT_DIR$/server/app/Ruleset.php" />
@@ -87,6 +98,7 @@
         <option value="$PROJECT_DIR$/server/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/server/database/migrations/2015_05_09_034452_change_turn_id_to_turn_number.php" />
+        <option value="$PROJECT_DIR$/server/app/Gameplay.php" />
       </list>
     </option>
   </component>
@@ -502,14 +514,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/app/Gameplay.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3899371" vertical-offset="0" max-vertical-offset="1272">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/app/Rule.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1509434" vertical-offset="0" max-vertical-offset="1272">
@@ -586,11 +590,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/database/migrations/2015_05_09_034452_change_turn_id_to_turn_number.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10062893" vertical-offset="0" max-vertical-offset="1272">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        <state vertical-scroll-proportion="-20.173914" vertical-offset="0" max-vertical-offset="752">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
           <folding>
             <element signature="e#7#52#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/Gameplay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16352202" vertical-offset="0" max-vertical-offset="1272">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>

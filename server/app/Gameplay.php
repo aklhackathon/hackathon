@@ -9,9 +9,9 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @property string  code
  * @property Ruleset ruleset
- * @property User    turn
  * @property User    created_at
  * @property User    updated_at
+ * @property integer turn
  */
 class Gameplay extends Model {
 
@@ -21,13 +21,5 @@ class Gameplay extends Model {
     public function ruleset()
     {
         return $this->belongsTo(Ruleset::class);
-    }
-
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     */
-    public function turn()
-    {
-        return $this->belongsTo(User::class, 'turn_id');
     }
 }
