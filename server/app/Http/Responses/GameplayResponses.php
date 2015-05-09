@@ -34,4 +34,13 @@ class GameplayResponses {
     {
         return $this->transformer->transform($gameplay);
     }
+
+    /**
+     * @param Gameplay $gameplay
+     * @return array
+     */
+    public function create(Gameplay $gameplay)
+    {
+        return $this->transformer->transform($gameplay);
+    }
 }
