@@ -8,7 +8,6 @@ use App\Http\Responses\GameplayResponses;
 use App\Ruleset;
 
 class GameplayController extends Controller {
-
     /**
      * @var GameplayResponses
      */
