@@ -34,5 +34,7 @@ Route::group(
                 ]
             );
         });
+
+        Route::resource('gameplay', 'GameplayController');
     }
 );
