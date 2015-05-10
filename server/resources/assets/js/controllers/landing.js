@@ -31,7 +31,7 @@ angular.module('CircleOfDeath.controllers').controller('LandingCtrl', function($
 	_initFetchGameplay = function() {
 		$http.get(GAMEPLAY_API_ENDPOINT)
 			.then(function(response) {
-				angular.forEach(response.data.ruleset.rule_matches, function(ruleMatch) {
+				angular.forEach(response.data.gameplay.ruleset.rule_matches, function(ruleMatch) {
 					$scope.cards.push(new Card(ruleMatch));
 				});
 
