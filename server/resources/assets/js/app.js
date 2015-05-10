@@ -14,6 +14,7 @@ angular.module('templates', []);
 
 // Adding angular modules
 require('./controllers/controllers');
+require('./directives/directives');
 require('./models/models');
 require('./routes/routes');
 

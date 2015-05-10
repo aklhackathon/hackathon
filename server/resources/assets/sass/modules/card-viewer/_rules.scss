@@ -1,0 +1,56 @@
+@import "variables";
+
+.selected-card-container {
+    width: 100%;
+    height: 100%;
+}
+
+.selected-card-base {
+    border-radius: $selected-card-base-border-radius;
+    width: 500px;
+    height: 700px;
+    margin: 0 auto;
+    background: #FFF;
+    border: 1px solid $cg1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: $global-padding;
+}
+
+.selected-card-number {
+    color: $primary;
+    font-size: 32px;
+    padding: $global-padding;
+}
+
+.selected-card-info-illustration {
+    border-radius: 3px;
+}
+
+.selected-card-number--top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.selected-card-number--bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotateZ(180deg);
+}
+
+.selected-card-info-header {
+    margin: 0;
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+}
+
+.selected-card-info-description {
+    text-align: center;
+}
+
+
