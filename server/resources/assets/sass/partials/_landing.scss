@@ -1,41 +1,12 @@
-.container.landing {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-
-    .logo {
-        width: 100%;
-    }
-
-    h2 {
-        width: 80%;
-        font-size: 2em;
-    }
-
-    p {
-        width: 100%;
-        padding: 0 10%;
-        margin: 0 0 5em 0;
-        text-align: left;
-        color: $cg9;
-    }
-
-    button {
-        @include button();
-        display: block;
-        width: 150px;
-    }
+.content-container {
+    height: calc(100% - 50px);
+    padding: 10px;
 }
 
 .card-viewer {
-    max-width: $global-max-page-width;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
     height: 100%;
-    display: block;
-    height: 400px;
 }
-

@@ -1,0 +1,21 @@
+﻿<Properties StartupItem="hackathon.droid/hackathon.droid.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="hackathon.droid/Properties/AndroidManifest.xml">
+    <Files>
+      <File FileName="hackathon.droid/Assets/card-data.txt" Line="151" Column="18" />
+      <File FileName="hackathon.droid/ListAdapters/CardListAdapter.cs" Line="59" Column="10" />
+      <File FileName="hackathon.droid/Activities/CardListView.cs" Line="46" Column="47" />
+      <File FileName="hackathon.droid/Activities/CardDescriptionActivity.cs" Line="24" Column="24" />
+      <File FileName="../../../thirtysecondsios/ThirtySecondsIOS/Apps/LatchDigital.ThirtySeconds.Droid/Views/HomeActivity.cs" Line="1" Column="1" />
+      <File FileName="../../../thirtysecondsios/ThirtySecondsIOS/Apps/LatchDigital.ThirtySeconds.Droid/Views/MainActivity.cs" Line="83" Column="50" />
+      <File FileName="hackathon.droid/Properties/AndroidManifest.xml" Line="4" Column="123" />
+      <File FileName="hackathon.droid/obj/Debug/android/AndroidManifest.xml" Line="5" Column="1" />
+      <File FileName="hackathon.droid/Resources/values/Strings.xml" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.hackathon.droid AndroidDesignerPreferredDevice="Nexus 4" />
+</Properties>

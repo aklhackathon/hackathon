@@ -1,9 +1,14 @@
 @import "variables";
 
+.selected-card-container {
+    width: 100%;
+    height: 100%;
+}
+
 .selected-card-base {
     border-radius: $selected-card-base-border-radius;
-    width: 300px;
-    height: 400px;
+    width: 500px;
+    height: 700px;
     margin: 0 auto;
     background: #FFF;
     border: 1px solid $cg1;
@@ -18,6 +23,10 @@
     color: $primary;
     font-size: 32px;
     padding: $global-padding;
+}
+
+.selected-card-info-illustration {
+    border-radius: 3px;
 }
 
 .selected-card-number--top-left {

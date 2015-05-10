@@ -16,6 +16,7 @@ angular.module('templates', []);
 require('./controllers/controllers');
 require('./models/models');
 require('./directives/directives');
+require('./models/models');
 require('./routes/routes');
 
 // Adding Angular TemplateCache
