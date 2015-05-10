@@ -34,8 +34,6 @@ class ChangeTurnIdToTurnNumber extends Migration {
             $table->dropColumn('turn');
 
             $table->unsignedInteger('turn_id');
-
-            $table->foreign('turn_id')->references('id')->on('users');
         });
     }
 }

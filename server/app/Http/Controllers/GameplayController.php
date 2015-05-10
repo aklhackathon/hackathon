@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use App\Gameplay;
 use App\Http\Responses\GameplayResponses;
 use App\Ruleset;
+use App\Services\RulesetReplicator;
 
 class GameplayController extends Controller {
     /**
@@ -34,9 +35,10 @@ class GameplayController extends Controller {
         /** @var Ruleset $baseRuleset */
         $baseRuleset = Ruleset::find(1);
 
+        $rulesetReplicator = new RulesetReplicator();
+
         /** @var Ruleset $ruleset */
-        $ruleset = $baseRuleset->replicate();
-        $ruleset->save();
+        $ruleset = $rulesetReplicator->replicate($baseRuleset);
 
         /** @var Gameplay $gameplay */
         $gameplay = new Gameplay();
