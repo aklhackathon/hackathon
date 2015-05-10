@@ -8,6 +8,7 @@ angular.module('CircleOfDeath.controllers').controller('LandingCtrl', function($
 	// Init scope vars
 	$scope.cards = [];
 	$scope.state = 'in-progress';
+	$scope.showCardInfo = false;
 
 	_initFetchGameplay = function() {
 		$http.get(GAMEPLAY_API_ENDPOINT)

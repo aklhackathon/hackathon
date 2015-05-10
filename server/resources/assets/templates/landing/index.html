@@ -1,3 +1,6 @@
-<div class="card-viewer">
+<div ng-class="{ 'card-viewer--show': showCardInfo }" class="card-viewer">
     <selected-card></selected-card>
+</div>
+<div ng-class="{ 'cards-grid--hide': showCardInfo }" class="cards-grid">
+	<cards-grid></cards-grid>
 </div>

@@ -1,6 +1,14 @@
 .cards-container {
   display: flex;
   justify-content: center;
+  position: relative;
+  top: 0;
+  transition: top 0.3s ease-in-out;
+}
+
+.cards-container--hide {
+    position: absolute;
+    top: 100%;
 }
 
 .cards {
