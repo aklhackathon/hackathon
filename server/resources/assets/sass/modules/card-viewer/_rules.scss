@@ -17,6 +17,8 @@
     flex-direction: column;
     justify-content: center;
     padding: $global-padding;
+    // @todo hacky method, stop the click event rather than use css
+    pointer-events: none;
 }
 
 .selected-card-number {

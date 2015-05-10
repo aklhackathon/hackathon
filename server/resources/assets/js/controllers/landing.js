@@ -8,19 +8,22 @@ angular.module('CircleOfDeath.controllers').controller('LandingCtrl', function($
 	// Init scope vars
 	$scope.cards = [];
 	$scope.state = 'in-progress';
-	$scope.toggleCardInfo = false;
+	$scope.toggleSelectedInfo = false;
 	$scope.selectedCard = null;
 
-	$scope.clickShowCard = function(cardId) {
-		$scope.toggleCardInfo = !$scope.toggleCardInfo;
+	$scope.showSelectedCard = function(cardId) {
+		$scope.toggleSelectedInfo = true;
 
-		if ($scope.toggleCardInfo) {
-			angular.forEach($scope.cards, function(card) {
-				if (card.id === cardId) {
-					$scope.selectedCard = card;
-				}
-			});
-		} else {
+		angular.forEach($scope.cards, function(card) {
+			if (card.id === cardId) {
+				$scope.selectedCard = card;
+			}
+		});
+	};
+
+	$scope.hideSelectedCard = function() {
+		if ($scope.toggleSelectedInfo) {
+			$scope.toggleSelectedInfo = false;
 			$scope.selectedCard = null;
 		}
 	};
