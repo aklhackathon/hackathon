@@ -3,7 +3,7 @@
 		<title>Circle of death</title>
 		
 		<link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
-
+        <meta property="og:image" content="http://circleofdeath.cards/images/logo.png" />
 		<style>
 			body {
 				margin: 0;
