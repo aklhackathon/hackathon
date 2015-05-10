@@ -20,13 +20,13 @@ require('./templates');
 
 // Finally setup the app module
 angular.module('CircleOfDeath', [
-	'ngRoute',
-	'CircleOfDeath.controllers',
-	'CircleOfDeath.directives',
-	'CircleOfDeath.factories',
-	'CircleOfDeath.services',
-	'CircleOfDeath.routes',
-	'templates'
+    'ngRoute',
+    'CircleOfDeath.controllers',
+    'CircleOfDeath.directives',
+    'CircleOfDeath.factories',
+    'CircleOfDeath.services',
+    'CircleOfDeath.routes',
+    'templates'
 ]).routes;
 
 
