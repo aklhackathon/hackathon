@@ -25,7 +25,7 @@
     padding: 0 10%;
     margin: 0 0 5em 0;
     text-align: left;
-    color: #999; }
+    color: #2d2d2d; }
   .container.landing button {
     border: #f86558 1px solid;
     border-radius: 3px;
@@ -41,6 +41,90 @@
       background: #f86558; }
       .container.landing button:hover a, .container.landing button:focus a {
         color: #fff; }
+
+.container.ruleset {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #2d2d2d;
+  padding: 2%; }
+  .container.ruleset h2 {
+    width: 100%;
+    color: #f86558; }
+  .container.ruleset .viewer {
+    color: #fff; }
+    .container.ruleset .viewer .viewer-card {
+      width: 150px;
+      height: 150px;
+      background: #fff;
+      color: #000; }
+  .container.ruleset .card-container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .container.ruleset .card-deck {
+    padding: 0;
+    list-style: none;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .container.ruleset .card-deck .card {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 100%;
+      background: #fff;
+      border: #eee 1px solid;
+      border-radius: 5px 5px 0 0;
+      position: relative;
+      margin: -5px 0 0 0;
+      cursor: pointer;
+      overflow: hidden;
+      text-overflow: wrap; }
+      .container.ruleset .card-deck .card:after {
+        content: "";
+        display: block;
+        clear: both; }
+      @media (min-width: 640px) {
+        .container.ruleset .card-deck .card {
+          width: 250px;
+          height: 400px;
+          margin: 0 10px 10px 0;
+          border-radius: 5px;
+          -webkit-flex-wrap: wrap;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap; } }
+      .container.ruleset .card-deck .card .cardNum {
+        float: left;
+        margin: 0 2em;
+        width: 4em; }
+        @media (min-width: 640px) {
+          .container.ruleset .card-deck .card .cardNum {
+            font-size: 4em;
+            width: 100%;
+            margin: 0;
+            text-align: center; } }
+      .container.ruleset .card-deck .card .title {
+        float: left; }
+        @media (min-width: 640px) {
+          .container.ruleset .card-deck .card .title {
+            width: 100%;
+            text-align: center; } }
 
 /* template */
 #wrapper {
