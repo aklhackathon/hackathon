@@ -22,20 +22,10 @@ var elixir = require('laravel-elixir'),
  * Elixir Task Definitions
  */
 elixir(function(mix) {
-	// Run before browserify
-    mix.task('templates');
-});
-
-elixir(function(mix) {
-    mix.task('bower');
-});
-
-elixir(function(mix) {
-    mix.browserify('app.js', 'resources/assets/js/browserified/app.js');
-});
-
-elixir(function(mix) {
-    mix.scripts(['vendor.js', 'browserified/app.js'], 'public/js/bundle.js');
+    mix.task('bower')
+        .task('templates')
+        .browserify('app.js', 'resources/assets/js/browserified/app.js')
+        .scripts(['vendor.js', 'browserified/app.js'], 'public/js/bundle.js');
 });
 
 elixir(function(mix) {
@@ -74,4 +64,6 @@ gulp.task('serve', ['watch'], function() {
     gulp.watch([
         './public/**/*.{js,html,css}'
     ]).on('change', reload);
+
+    gulp.watch(ASSETS_DIR + 'templates/**/*.html', ['templates']);
 });
