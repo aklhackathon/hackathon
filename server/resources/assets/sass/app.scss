@@ -1,3 +1,26 @@
-body {
-	background: red;
+@import "variables";
+@import "mixins";
+
+@import "partials/landing";
+
+
+/* template */
+#wrapper{
+	position: relative;
+}
+
+header{
+	background: #000;
+	width: 100%;
+	color: $primary;
+	text-align: center;
+}
+footer{
+	background: #000;
+	position: absolute;
+	left: 0;
+	bottom:0;
+	width: 100%;
+	color: $secondary;
+	text-align: center;
 }
