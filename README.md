@@ -29,5 +29,18 @@ If the user wants to edit the rule, they can click the little "Edit" button link
 ![Description](http://i.imgur.com/SkNWtTQ.png?1 "Rule Edit View")
 In here users can edit the `name` and `rules` properties of this card. They can also add several rules if they want.
 
+## Running the FE Client
+If you don't have gulp or bower installed globally run:
+`npm install -g gulp && npm install -g bower`
+
+Then cd into the `server` dir and run:
+`npm install && bower install`
+
+To run the client locally in the `server` dir run:
+`gulp serve`
+This will start a watcher on your dev files, auto-reload on change and serve your files on a simple http server.
+
+Access the app at [localhost:9000/app.html](localhost:9000/app.html) in your browser.
+
 ## Drink responsibly and peacefully.
 ![drink-happy](http://i.giphy.com/DfLwM9kttDFEQ.gif "Drink responsibly and peacefully")
