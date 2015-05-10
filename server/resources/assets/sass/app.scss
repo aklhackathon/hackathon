@@ -29,9 +29,11 @@ body {
   background: $cg9;
   font-family: $global-font-family;
   margin: 0;
+  height: 100%;
 }
 
 header{
+    height: 50px;
     background: #000;
     width: 100%;
     color: $primary;

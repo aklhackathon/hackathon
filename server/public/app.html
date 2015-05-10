@@ -7,30 +7,22 @@
 	<link rel="stylesheet" href="css/app.css">
 </head>
 <body ng-app="CircleOfDeath">
-    <div>
-        <header>
-            <div class="row">
-                Circle of Death
-            </div>
-        </header>
-        <!-- @todo make modal using this markup -->
-        <!-- <div class="modal-overlay">
-            <div class="helper-modal">
-                <div class="logo"><img src="images/symbol.png" alt="logo"></div>
-                <h2>Circle Of Death</h2>
-                <p>Before starting the game, players must gather around a table and place an empty can in the center. A standard deck of cards in then shuffled and spread face down, in a circle around the can, forming the "Circle of Death".</p>
-                <button><a>start</a></button>
-            </div>
-        </div> -->
+    <header>
+        <div class="row">
+            Circle of Death
+        </div>
+    </header>
+    <!-- @todo make modal using this markup -->
+    <!-- <div class="modal-overlay">
+        <div class="helper-modal">
+            <div class="logo"><img src="images/symbol.png" alt="logo"></div>
+            <h2>Circle Of Death</h2>
+            <p>Before starting the game, players must gather around a table and place an empty can in the center. A standard deck of cards in then shuffled and spread face down, in a circle around the can, forming the "Circle of Death".</p>
+            <button><a>start</a></button>
+        </div>
+    </div> -->
 
-        <section ng-view class="container landing row" ></section>
-
-        <footer>
-            <div class="row">
-                2015 Hackathon Auckland NZ
-            </div>
-        </footer>
-    </div>
+    <section ng-view class="content-container" ></section>
 <script src="js/bundle.js"></script>
 </body>
 </html>
