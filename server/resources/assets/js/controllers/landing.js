@@ -2,7 +2,7 @@
 'use strict';
 
 angular.module('CircleOfDeath.controllers').controller('LandingCtrl', function($scope, $http, Card) {
-	var GAMEPLAY_API_ENDPOINT = 'gameplay.json',
+	var GAMEPLAY_API_ENDPOINT = './api/gameplay/1',
 		_initFetchGameplay;
 
 	// Init scope vars
