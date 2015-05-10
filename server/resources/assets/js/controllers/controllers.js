@@ -1,4 +1,4 @@
 /*globals require*/
 'use strict';
 
-require('./home');
+require('./landing');
