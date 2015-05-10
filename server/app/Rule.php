@@ -7,8 +7,15 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @package App
  *
- * @property string $description
+ * @property string    $description
+ * @property integer   id
+ * @property string    name
  */
 class Rule extends Model {
+
+    protected $fillable = [
+        "name",
+        "description",
+    ];
 
 }

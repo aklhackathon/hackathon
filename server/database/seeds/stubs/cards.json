@@ -1,0 +1,88 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "name": "2",
+      "letter": "2",
+      "rank": 1
+    },
+    {
+      "id": 2,
+      "name": "3",
+      "letter": "3",
+      "rank": 2
+    },
+    {
+      "id": 3,
+      "name": "4",
+      "letter": "4",
+      "rank": 3
+    },
+    {
+      "id": 4,
+      "name": "5",
+      "letter": "5",
+      "rank": 4
+    },
+    {
+      "id": 5,
+      "name": "6",
+      "letter": "6",
+      "rank": 5
+    },
+    {
+      "id": 6,
+      "name": "7",
+      "letter": "7",
+      "rank": 6
+    },
+    {
+      "id": 7,
+      "name": "8",
+      "letter": "8",
+      "rank": 7
+    },
+    {
+      "id": 8,
+      "name": "9",
+      "letter": "9",
+      "rank": 8
+    },
+    {
+      "id": 9,
+      "name": "10",
+      "letter": "10",
+      "rank": 9
+    },
+    {
+      "id": 10,
+      "name": "Jack",
+      "letter": "J",
+      "rank": 10
+    },
+    {
+      "id": 11,
+      "name": "Queen",
+      "letter": "Q",
+      "rank": 11
+    },
+    {
+      "id": 12,
+      "name": "King",
+      "letter": "K",
+      "rank": 12
+    },
+    {
+      "id": 13,
+      "name": "Ace",
+      "letter": "A",
+      "rank": 13
+    },
+    {
+      "id": 14,
+      "name": "Joker",
+      "letter": "Joker",
+      "rank": 14
+    }
+  ]
+}
