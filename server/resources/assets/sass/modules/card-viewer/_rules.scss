@@ -26,10 +26,6 @@
     padding: $global-padding;
 }
 
-.selected-card-info-illustration {
-    border-radius: 3px;
-}
-
 .selected-card-number--top-left {
     position: absolute;
     top: 0;
@@ -52,6 +48,7 @@
 
 .selected-card-info-description {
     text-align: center;
+    line-height: 1.5;
 }
 
 

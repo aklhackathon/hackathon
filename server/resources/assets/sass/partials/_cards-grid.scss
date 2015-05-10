@@ -61,7 +61,9 @@
   }
 
   h4 {
-    margin-right: 10px;
+    @include max-mobile {
+      margin-right: 10px;
+    }
   }
 
 }
