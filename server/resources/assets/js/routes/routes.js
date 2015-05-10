@@ -12,7 +12,7 @@ angular.module('CircleOfDeath.routes').config(function($routeProvider, $location
     $routeProvider
         .when(ROOT, {
             controller: 'LandingCtrl',
-            templateUrl: 'test.html'
+            templateUrl: 'landing/index.html'
         })
         .otherwise({
             // Redirect all undefined routes back to home
