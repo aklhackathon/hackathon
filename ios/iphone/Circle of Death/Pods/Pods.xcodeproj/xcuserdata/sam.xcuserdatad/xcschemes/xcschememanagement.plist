@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Circle of Death-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Circle of Death.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Circle of DeathTests-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Circle of DeathTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0A4D78D2ECCC5B87D75CDC9F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6AA3F224555C0E625C4CC22D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9444DC216A281B0E3D9ADEA8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9C7166868C0BFB99AB539828</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9F64CBF94D1AFC70332C2365</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EDECCC2194C53416497F9C20</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

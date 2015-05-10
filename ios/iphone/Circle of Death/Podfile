@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+pod 'AFNetworking', '~> 2.0'
+
+target 'Circle of Death' do
+
+end
+
+target 'Circle of DeathTests' do
+
+end
+
