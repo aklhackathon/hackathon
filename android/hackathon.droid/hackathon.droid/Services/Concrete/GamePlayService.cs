@@ -11,13 +11,15 @@ namespace hackathon.droid.Services.Concrete
     {
         public async Task<GamePlayRoot> GetGamePlay()
         {
-            string json;
-            var baseDirectory = Directory.GetCurrentDirectory().Substring(0, (Directory.GetCurrentDirectory().IndexOf(@"hackathon.test\bin\Debug", StringComparison.Ordinal))); ; // Get the current working directory
-            var jsonPath = baseDirectory + @"hackathon.droid/Services/DAL/card-data.txt";
-            using (var stream = new StreamReader(jsonPath))
-            {
-                json = await stream.ReadToEndAsync();
-            }
+//            string json;
+//            using (var stream = new StreamReader(Asset.))
+//            {
+//                json = await stream.ReadToEndAsync();
+//            }
+
+			string json = string.Empty;
+
+
             return string.IsNullOrEmpty(json) ? new GamePlayRoot() : JsonConvert.DeserializeObject<GamePlayRoot>(json);
         }
     }

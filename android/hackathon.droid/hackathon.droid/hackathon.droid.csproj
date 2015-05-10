@@ -71,6 +71,7 @@
     <Compile Include="Services\DAL\Utilities\ApiEndPoint.cs" />
     <Compile Include="Services\DAL\Utilities\HttpFactoryUtility.cs" />
     <Compile Include="Services\DAL\Utilities\HttpResponseExceptionHandler.cs" />
+    <Compile Include="Activities\CardDescriptionActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config">
@@ -85,6 +86,7 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\logo.png" />
+    <AndroidResource Include="Resources\layout\card_detail_view.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
@@ -96,7 +98,6 @@
     <AndroidResource Include="Resources\drawable\Icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Services\DAL\card-data.txt" />
     <Content Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
@@ -112,4 +113,9 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <AndroidAsset Include="Assets\card-data.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidAsset>
+  </ItemGroup>
 </Project>

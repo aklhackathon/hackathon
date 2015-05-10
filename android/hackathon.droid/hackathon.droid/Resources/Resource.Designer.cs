@@ -63,14 +63,26 @@ namespace hackathon.droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050002
-			public const int btn_start = 2131034114;
+			// aapt resource value: 0x7f050006
+			public const int btn_start = 2131034118;
 			
-			// aapt resource value: 0x7f050000
-			public const int card_number = 2131034112;
+			// aapt resource value: 0x7f050004
+			public const int card_description = 2131034116;
+			
+			// aapt resource value: 0x7f050003
+			public const int card_number = 2131034115;
+			
+			// aapt resource value: 0x7f050002
+			public const int lbl_card_description = 2131034114;
 			
 			// aapt resource value: 0x7f050001
-			public const int list_cards = 2131034113;
+			public const int lbl_card_name = 2131034113;
+			
+			// aapt resource value: 0x7f050000
+			public const int lbl_card_number = 2131034112;
+			
+			// aapt resource value: 0x7f050005
+			public const int list_cards = 2131034117;
 			
 			static Id()
 			{
@@ -86,13 +98,16 @@ namespace hackathon.droid
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int card_list_item = 2130903040;
+			public const int card_detail_view = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int card_list_view = 2130903041;
+			public const int card_list_item = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int Main = 2130903042;
+			public const int card_list_view = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int Main = 2130903043;
 			
 			static Layout()
 			{

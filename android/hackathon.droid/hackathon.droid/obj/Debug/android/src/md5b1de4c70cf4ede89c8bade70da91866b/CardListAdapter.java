@@ -25,6 +25,13 @@ public class CardListAdapter
 			mono.android.TypeManager.Activate ("hackathon.droid.ListAdapters.CardListAdapter, hackathon.droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
+	public CardListAdapter (android.app.Activity p0) throws java.lang.Throwable
+	{
+		super ();
+		if (getClass () == CardListAdapter.class)
+			mono.android.TypeManager.Activate ("hackathon.droid.ListAdapters.CardListAdapter, hackathon.droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Android.App.Activity, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", this, new java.lang.Object[] { p0 });
+	}
+
 
 	public java.lang.Object getItem (int p0)
 	{

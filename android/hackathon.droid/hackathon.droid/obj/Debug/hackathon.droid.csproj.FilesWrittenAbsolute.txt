@@ -17,3 +17,5 @@
 /Users/brentonwong/workspace/hackathon/android/hackathon.droid/hackathon.droid/obj/Debug/uploadflags.txt
 /Users/brentonwong/workspace/hackathon/android/hackathon.droid/hackathon.droid/obj/Debug/hackathon.droid.dll
 /Users/brentonwong/workspace/hackathon/android/hackathon.droid/hackathon.droid/obj/Debug/hackathon.droid.dll.mdb
+/Users/brentonwong/workspace/hackathon/android/hackathon.droid/hackathon.droid/bin/Debug/Services/DAL/card-data.txt
+/Users/brentonwong/workspace/hackathon/android/hackathon.droid/hackathon.droid/obj/Debug/res/layout/card_detail_view.xml

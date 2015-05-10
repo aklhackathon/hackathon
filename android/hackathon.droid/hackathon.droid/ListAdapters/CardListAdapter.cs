@@ -13,12 +13,19 @@ using hackathon.droid.Models.Cards;
 
 namespace hackathon.droid.ListAdapters
 {
-    public class CardListAdapter : BaseAdapter<CardModel>
+	public class CardListAdapter : BaseAdapter<RuleMatchModel>
     {
-        public List<CardModel> Cards { get; set; } 
+        public List<RuleMatchModel> Cards { get; set; } 
+		private Activity _activity;
+
+		public CardListAdapter(Activity activity) 
+		{
+			_activity = activity;
+			Cards = new List<RuleMatchModel>();
+		}
 
 
-        public override CardModel this[int position]
+		public override RuleMatchModel this[int position]
         {
             get { return Cards[position]; }
         }
@@ -35,7 +42,20 @@ namespace hackathon.droid.ListAdapters
 
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
-			throw NotImplementedException ();
+			var view = convertView;
+			if (convertView == null) {
+				view = _activity.LayoutInflater.Inflate (Resource.Layout.card_list_item, null);
+			}
+
+			var card = Cards [position];
+
+			var number = view.FindViewById<TextView> (Resource.Id.card_number);
+			number.Text = card.Card.CardLetter;
+
+			var description = view.FindViewById<TextView> (Resource.Id.card_description);
+			description.Text = card.Rule.RuleName;
+
+			return view;
         }
     }
 }
