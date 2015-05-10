@@ -23,7 +23,8 @@
 html,
 body {
   box-sizing: border-box;
-  background: #2d2d2d;
+  background: $cg9;
+  font-family: $global-font-family;
 }
 
 header{

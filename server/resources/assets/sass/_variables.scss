@@ -10,8 +10,11 @@ $cg1 : #eee;
 $cg3 : #bbb;
 $cg5 : #444;
 $cg7 : #666;
-$cg9 : #999;
+$cg9 : #2d2d2d;
 
 /* GlOBAL STYLES */
 $global-border: 1px solid $cg3;
 $global-border-width: 1px;
+$global-padding: 10px;
+
+$global-font-family: "helvetica neue", "arial", "times new roman";
