@@ -7,8 +7,8 @@
 
 .selected-card-base {
     border-radius: $selected-card-base-border-radius;
-    width: 500px;
-    height: 700px;
+    width: $selected-card-width;
+    height: $selected-card-height;
     margin: 0 auto;
     background: #FFF;
     border: 1px solid $cg1;
@@ -17,16 +17,15 @@
     flex-direction: column;
     justify-content: center;
     padding: $global-padding;
+    // @todo hacky method, stop the click event rather than use css
+    pointer-events: none;
 }
 
 .selected-card-number {
     color: $primary;
-    font-size: 32px;
+    font-size: 50px;
+    font-weight: 800;
     padding: $global-padding;
-}
-
-.selected-card-info-illustration {
-    border-radius: 3px;
 }
 
 .selected-card-number--top-left {
@@ -51,6 +50,7 @@
 
 .selected-card-info-description {
     text-align: center;
+    line-height: 1.5;
 }
 
 

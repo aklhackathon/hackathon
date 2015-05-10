@@ -1,3 +1,7 @@
-<div class="card-viewer">
+<div ng-click="hideSelectedCard()" ng-class="{ 'card-viewer--show': toggleSelectedInfo }" class="card-viewer">
     <selected-card></selected-card>
+</div>
+
+<div ng-class="{ 'cards-grid--hide': toggleSelectedInfo }" class="cards-grid">
+	<cards-grid></cards-grid>
 </div>
