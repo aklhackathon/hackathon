@@ -1,87 +1,62 @@
-.container.ruleset{
+.cards-container {
+  display: flex;
+  justify-content: center;
+}
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background: $cg10;
-    padding: 2%;
-    // @include bp(tablet){
+.cards {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 
-    // }
-    h2{
-        width: 100%;
-        color: $primary;
+  @include max-mobile {
+    flex-direction: column;
+  }
+}
+
+.card {
+  cursor: pointer;
+  position: relative;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: $card-border-radius;
+  height: $card-height;
+  flex-basis: $card-width;
+  background: #FFF;
+  margin: 10px;
+  transition: transform 0.1s ease-in-out;
+
+  h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 80px;
+    margin: 0;
+    font-weight: 300;
+
+    @include max-mobile {
+      top: 10px;
+      left: 10px;
+      width: initial;
+      margin: 0 10px;
+      text-align: left;
+      font-size: 30px;
     }
+  }
 
-    .viewer{
-        color: #fff;
-        .viewer-card{
-            width: 150px;
-            height: 150px;
-            background: #fff;
-            color: #000;
-        }
-    }
-    .card-container{
-        display: flex;
-        justify-content: center;
-        // width: 100%;
-    }
-    .card-deck{
-        padding: 0;
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        @include bp(tablet){
+  @include max-mobile {
+    flex-grow: 1;
+    justify-content: space-between;
+    flex-direction: row;
+    max-height: 60px;
+    margin: 5px 0;
+  }
 
-        }
-        .card{
-            &:after{
-                content:"";
-                display: block;
-                clear: both;
-            }
-            display: flex;
-            align-items: center;
-            width: 100%;
-            background: #fff;
-            border: $cg1 1px solid;
-            border-radius: 5px 5px 0 0;
-            position: relative;
-            margin: -5px 0 0 0;
-            cursor: pointer;
-            overflow: hidden;
-            text-overflow: wrap;
-            // transition: transform 0.1s ease-in-out;
-
-            @include bp(tablet){
-                width: 250px;
-                height: 400px;
-                margin: 0 10px 10px 0;
-                border-radius: 5px;
-                flex-wrap: wrap;
-
-            }
-            .cardNum{
-                float: left;
-                margin: 0 2em;
-                width: 4em;
-                @include bp(tablet){
-                    font-size: 4em;
-                    width: 100%;
-                    margin: 0;
-                    text-align: center;
-                }
-            }
-            .title{
-                float: left;
-                @include bp(tablet){
-                    width: 100%;
-                    text-align: center;
-                }
-            }
-
-        }
-    }
+  h4 {
+    margin-right: 10px;
+  }
 
 }

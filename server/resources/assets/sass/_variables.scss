@@ -17,6 +17,11 @@ $cg10 : #2d2d2d;
 $global-border: 1px solid $cg3;
 $global-border-width: 1px;
 $global-padding: 10px;
+$global-max-page-width: 1280px;
 
 $global-font-family: "helvetica neue", "arial", "times new roman";
->>>>>>> origin/add-card-viewer-module
+
+// Variables
+$card-border-radius: 3px;
+$card-width: 250px;
+$card-height: 400px;
