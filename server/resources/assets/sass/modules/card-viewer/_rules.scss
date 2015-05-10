@@ -1,0 +1,47 @@
+@import "variables";
+
+.selected-card-base {
+    border-radius: $selected-card-base-border-radius;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    background: #FFF;
+    border: 1px solid $cg1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: $global-padding;
+}
+
+.selected-card-number {
+    color: $primary;
+    font-size: 32px;
+    padding: $global-padding;
+}
+
+.selected-card-number--top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.selected-card-number--bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotateZ(180deg);
+}
+
+.selected-card-info-header {
+    margin: 0;
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+}
+
+.selected-card-info-description {
+    text-align: center;
+}
+
+
