@@ -2,7 +2,7 @@
 'use strict';
 
 angular.module('CircleOfDeath.routes').config(function($routeProvider, $locationProvider) {
-    var ROOT = '/app.html';
+    var ROOT = '/';
 
     $locationProvider.html5Mode({
         enabled: true,
