@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Circle of Death-MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Circle of Death.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -24,7 +29,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Circle of DeathTests-MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Circle of DeathTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,32 +52,47 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0A4D78D2ECCC5B87D75CDC9F</key>
+		<key>231CF0DB9B7B7FEA0DC4945F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6AA3F224555C0E625C4CC22D</key>
+		<key>2DE430C53C93F93091D32456</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9444DC216A281B0E3D9ADEA8</key>
+		<key>50E4AA206468D5BB1E99A989</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9C7166868C0BFB99AB539828</key>
+		<key>529A1F51351F6BFFC509617E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9F64CBF94D1AFC70332C2365</key>
+		<key>5415C6894808CA0AE6F2B4C2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EDECCC2194C53416497F9C20</key>
+		<key>914A757AFCDC4C9AE9C066B9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>984261904465B477D24EE4FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F376F64E0629CDA1FEAB6EE3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F99ABEED648085666C4897AE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

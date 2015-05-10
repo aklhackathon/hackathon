@@ -27,7 +27,7 @@
 {
     if (self = [super init])
     {
-        self.identifier  = [json objectForKey:@"id"];
+        self.identifier = [json objectForKey:@"id"];
     }
     return self;
 }

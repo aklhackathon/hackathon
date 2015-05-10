@@ -7,11 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HAKRuleset.h"
 
-@interface CardsListViewController : UIViewController <UITableViewDataSource>
+@interface CardsListViewController : UIViewController <UIScrollViewDelegate>
 {
-    NSArray *cards;
-    NSArray *cardViews;
+    HAKRuleset *ruleset;
+    NSMutableArray *cardViews;
 }
+
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
+@property (weak, nonatomic) IBOutlet UIButton *backBtn;
+@property (weak, nonatomic) IBOutlet UIButton *editBtn;
+
+- (IBAction)viewAllCards:(id)sender;
+- (IBAction)editRule:(id)sender;
 
 @end

@@ -27,6 +27,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
     UINavigationController *mainNavController = [UINavigationController new];
     [mainNavController setNavigationBarHidden:YES];
     

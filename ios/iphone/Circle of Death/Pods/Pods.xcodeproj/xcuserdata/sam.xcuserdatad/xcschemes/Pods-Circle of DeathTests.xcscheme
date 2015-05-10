@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9444DC216A281B0E3D9ADEA8"
+               BlueprintIdentifier = "231CF0DB9B7B7FEA0DC4945F"
                BuildableName = "libPods-Circle of DeathTests.a"
                BlueprintName = "Pods-Circle of DeathTests"
                ReferencedContainer = "container:Pods.xcodeproj">

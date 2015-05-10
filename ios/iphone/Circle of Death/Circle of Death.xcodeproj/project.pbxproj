@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2249798F1AFEFF58008B3BF7 /* HAKCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 2249798E1AFEFF58008B3BF7 /* HAKCard.m */; };
+		224979921AFF0242008B3BF7 /* HAKRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 224979911AFF0242008B3BF7 /* HAKRule.m */; };
+		225C3D251AFF0D9200A14B1B /* HAKRuleset.m in Sources */ = {isa = PBXBuildFile; fileRef = 225C3D241AFF0D9200A14B1B /* HAKRuleset.m */; };
+		225C3D281AFF14C400A14B1B /* Enums.m in Sources */ = {isa = PBXBuildFile; fileRef = 225C3D271AFF14C400A14B1B /* Enums.m */; };
+		225C3D2A1AFF203200A14B1B /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 225C3D291AFF203200A14B1B /* back.png */; };
 		226459861AFECA24000C6CD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 226459851AFECA24000C6CD9 /* main.m */; };
 		226459891AFECA24000C6CD9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 226459881AFECA24000C6CD9 /* AppDelegate.m */; };
 		226459911AFECA24000C6CD9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 226459901AFECA24000C6CD9 /* Images.xcassets */; };
@@ -61,6 +66,15 @@
 
 /* Begin PBXFileReference section */
 		1A734A0C301D2FB57D5DB046 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		2249798D1AFEFF58008B3BF7 /* HAKCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HAKCard.h; path = Models/HAKCard.h; sourceTree = "<group>"; };
+		2249798E1AFEFF58008B3BF7 /* HAKCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAKCard.m; path = Models/HAKCard.m; sourceTree = "<group>"; };
+		224979901AFF0242008B3BF7 /* HAKRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HAKRule.h; path = Models/HAKRule.h; sourceTree = "<group>"; };
+		224979911AFF0242008B3BF7 /* HAKRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAKRule.m; path = Models/HAKRule.m; sourceTree = "<group>"; };
+		225C3D231AFF0D9200A14B1B /* HAKRuleset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HAKRuleset.h; path = Models/HAKRuleset.h; sourceTree = "<group>"; };
+		225C3D241AFF0D9200A14B1B /* HAKRuleset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAKRuleset.m; path = Models/HAKRuleset.m; sourceTree = "<group>"; };
+		225C3D261AFF14C400A14B1B /* Enums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Enums.h; path = Core/Enums.h; sourceTree = "<group>"; };
+		225C3D271AFF14C400A14B1B /* Enums.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Enums.m; path = Core/Enums.m; sourceTree = "<group>"; };
+		225C3D291AFF203200A14B1B /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		226459801AFECA24000C6CD9 /* Circle of Death.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Circle of Death.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		226459841AFECA24000C6CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		226459851AFECA24000C6CD9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -214,8 +228,14 @@
 		226459AA1AFECA3E000C6CD9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2249798D1AFEFF58008B3BF7 /* HAKCard.h */,
+				2249798E1AFEFF58008B3BF7 /* HAKCard.m */,
 				22AA79201AFED004004E2FBB /* HAKObject.h */,
 				22AA79211AFED004004E2FBB /* HAKObject.m */,
+				224979901AFF0242008B3BF7 /* HAKRule.h */,
+				224979911AFF0242008B3BF7 /* HAKRule.m */,
+				225C3D231AFF0D9200A14B1B /* HAKRuleset.h */,
+				225C3D241AFF0D9200A14B1B /* HAKRuleset.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -226,6 +246,8 @@
 				226459871AFECA24000C6CD9 /* AppDelegate.h */,
 				226459881AFECA24000C6CD9 /* AppDelegate.m */,
 				226459921AFECA24000C6CD9 /* LaunchScreen.xib */,
+				225C3D261AFF14C400A14B1B /* Enums.h */,
+				225C3D271AFF14C400A14B1B /* Enums.m */,
 				226459AE1AFECB16000C6CD9 /* HackathonAPI.h */,
 				226459AF1AFECB16000C6CD9 /* HackathonAPI.m */,
 			);
@@ -259,6 +281,7 @@
 		22AA79231AFED2E0004E2FBB /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				225C3D291AFF203200A14B1B /* back.png */,
 				22AA79291AFED444004E2FBB /* help-white.png */,
 				22AA792A1AFED444004E2FBB /* help.png */,
 				22AA79241AFED2E0004E2FBB /* logo.png */,
@@ -399,6 +422,7 @@
 				22AA794E1AFED6FA004E2FBB /* Roboto-MediumItalic.ttf in Resources */,
 				22AA79501AFED6FA004E2FBB /* Roboto-Thin.ttf in Resources */,
 				22AA79581AFED6FA004E2FBB /* Rokkitt.otf in Resources */,
+				225C3D2A1AFF203200A14B1B /* back.png in Resources */,
 				22AA794F1AFED6FA004E2FBB /* Roboto-Regular.ttf in Resources */,
 				22AA79571AFED6FA004E2FBB /* RobotoCondensed-Regular.ttf in Resources */,
 				22AA792C1AFED444004E2FBB /* help.png in Resources */,
@@ -469,16 +493,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				225C3D281AFF14C400A14B1B /* Enums.m in Sources */,
 				22AA79651AFEE3DD004E2FBB /* CardsListViewController.m in Sources */,
 				226459B01AFECB16000C6CD9 /* HackathonAPI.m in Sources */,
 				22AA795F1AFEDCF0004E2FBB /* HelpView.m in Sources */,
+				225C3D251AFF0D9200A14B1B /* HAKRuleset.m in Sources */,
 				22AA79691AFEE707004E2FBB /* CardView.m in Sources */,
+				224979921AFF0242008B3BF7 /* HAKRule.m in Sources */,
 				22AA79281AFED36C004E2FBB /* UIView+Extras.m in Sources */,
 				226459891AFECA24000C6CD9 /* AppDelegate.m in Sources */,
 				226459861AFECA24000C6CD9 /* main.m in Sources */,
 				22AA79221AFED004004E2FBB /* HAKObject.m in Sources */,
 				22AA795C1AFEDA0D004E2FBB /* UIColor+Extras.m in Sources */,
 				22AA79301AFED5C4004E2FBB /* HomeViewController.m in Sources */,
+				2249798F1AFEFF58008B3BF7 /* HAKCard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

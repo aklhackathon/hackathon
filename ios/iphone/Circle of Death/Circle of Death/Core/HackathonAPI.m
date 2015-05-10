@@ -11,12 +11,14 @@
 
 #pragma mark - API URLs
 
-static NSString *const kGETGameplayURL  = @"http://hackathon.com/gameplay";
-static NSString *const kGETRulesURL     = @"http://hackathon.com/rules";
-static NSString *const kGETRulesetURL   = @"http://hackathon.com/ruleset";
+static NSString *const kBaseURL     = @"http://localhost:3000";
+static NSString *const kGameplayURL = @"/gameplay";
+static NSString *const kRulesURL    = @"/rules";
+static NSString *const kRulesetURL  = @"/ruleset";
 
 @interface HackathonAPI ()
 
+- (void)singletonInit;
 - (NSString *)getURLForType:(RequestType)type;
 
 @end
@@ -31,33 +33,29 @@ static NSString *const kGETRulesetURL   = @"http://hackathon.com/ruleset";
     static HackathonAPI *shared = nil;
     
     dispatch_once(&pred, ^{
-        shared = [[HackathonAPI alloc] init];
+        shared = [[super allocWithZone:NULL] init];
+        [shared singletonInit];
     });
     
     return shared;
 }
 
-- (id)init
+- (void)singletonInit
 {
-    if (self = [super init])
-    {
-        
-    }
-    return self;
 }
 
-#pragma mark - Custom Fucnctions
+#pragma mark - Custom Functions
 
 - (void)getObjectsOfType:(RequestType)type
           withParameters:(NSString *)params
                   method:(RequestMethod)method
-          withCompletion:(void (^)(NSArray *matches, NSError *error))completion
+          withCompletion:(void (^)(id results, NSError *error))completion
 {
     NSString *url = [self getURLForType:type];
     
     if (url)
     {
-        AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+        AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:[NSURL URLWithString:kBaseURL]];
         [manager GET:url parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject)
          {
              completion(responseObject, nil);
@@ -67,20 +65,22 @@ static NSString *const kGETRulesetURL   = @"http://hackathon.com/ruleset";
              completion(nil, error);
          }];
     }
-    
-    completion(nil, [NSError errorWithDomain:@"com.hackathon.circle-of-death"
-                                        code:101
-                                    userInfo:@{NSLocalizedDescriptionKey : @"Invalid type."}]);
+    else
+    {
+        completion(nil, [NSError errorWithDomain:@"com.hackathon.circle-of-death"
+                                            code:101
+                                        userInfo:@{NSLocalizedDescriptionKey : @"Invalid type."}]);
+    }
 }
 
 - (void)createObject:(HAKObject *)object
-      withCompletion:(void (^)(NSArray *matches, NSError *error))completion
+      withCompletion:(void (^)(id results, NSError *error))completion
 {
     NSString *url = [self getURLForType:[object type]];
     
     if (url)
     {
-        AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+        AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:[NSURL URLWithString:kBaseURL]];
         [manager POST:url parameters:[object generateParameters] success:^(AFHTTPRequestOperation *operation, id responseObject)
          {
              // need to check if succesful
@@ -92,10 +92,121 @@ static NSString *const kGETRulesetURL   = @"http://hackathon.com/ruleset";
              completion(nil, error);
          }];
     }
+    else
+    {
+        completion(nil, [NSError errorWithDomain:@"com.hackathon.circle-of-death"
+                                            code:101
+                                        userInfo:@{NSLocalizedDescriptionKey : @"Invalid type."}]);
+    }
+}
+
++ (CardType)cardTypeForLetter:(NSString *)letter
+{
+    if ([letter isEqualToString:@"A"])
+    {
+        return CardTypeAce;
+    }
+    else if ([letter isEqualToString:@"2"])
+    {
+        return CardTypeTwo;
+    }
+    else if ([letter isEqualToString:@"3"])
+    {
+        return CardTypeThree;
+    }
+    else if ([letter isEqualToString:@"4"])
+    {
+        return CardTypeFour;
+    }
+    else if ([letter isEqualToString:@"5"])
+    {
+        return CardTypeFive;
+    }
+    else if ([letter isEqualToString:@"6"])
+    {
+        return CardTypeSix;
+    }
+    else if ([letter isEqualToString:@"7"])
+    {
+        return CardTypeSeven;
+    }
+    else if ([letter isEqualToString:@"8"])
+    {
+        return CardTypeEight;
+    }
+    else if ([letter isEqualToString:@"9"])
+    {
+        return CardTypeNine;
+    }
+    else if ([letter isEqualToString:@"10"])
+    {
+        return CardTypeTen;
+    }
+    else if ([letter isEqualToString:@"J"])
+    {
+        return CardTypeJack;
+    }
+    else if ([letter isEqualToString:@"Q"])
+    {
+        return CardTypeQueen;
+    }
+    else if ([letter isEqualToString:@"K"])
+    {
+        return CardTypeKing;
+    }
     
-    completion(nil, [NSError errorWithDomain:@"com.hackathon.circle-of-death"
-                                        code:101
-                                    userInfo:@{NSLocalizedDescriptionKey : @"Invalid type."}]);
+    return CardTypeNone;
+}
+
++ (CardType)cardTypeForNumber:(NSInteger)number
+{
+    return (CardType)number;
+}
+
++ (NSString *)labelForCardType:(CardType)cardType
+{
+    switch (cardType)
+    {
+        case CardTypeAce:
+        {
+            return @"Ace";
+            break;
+        }
+        case CardTypeJack:
+        {
+            return @"Jack";
+            break;
+        }
+        case CardTypeQueen:
+        {
+            return @"Queen";
+            break;
+        }
+        case CardTypeKing:
+        {
+            return @"King";
+            break;
+        }
+        case CardTypeJoker:
+        {
+            return @"Joker";
+            break;
+        }
+        case CardTypeTwo:
+        case CardTypeThree:
+        case CardTypeFour:
+        case CardTypeFive:
+        case CardTypeSix:
+        case CardTypeSeven:
+        case CardTypeEight:
+        case CardTypeNine:
+        case CardTypeTen:
+        default:
+        {
+            return [[NSNumber numberWithInteger:(cardType + 1)] stringValue];
+            break;
+        }
+    }
 }
 
 - (NSString *)getURLForType:(RequestType)type
@@ -104,17 +215,17 @@ static NSString *const kGETRulesetURL   = @"http://hackathon.com/ruleset";
     {
         case RequestTypeGameplay:
         {
-            return kGETGameplayURL;
+            return kGameplayURL;
             break;
         }
         case RequestTypeRuleset:
         {
-            return kGETRulesetURL;
+            return kRulesetURL;
             break;
         }
         case RequestTypeRules:
         {
-            return kGETRulesURL;
+            return kRulesURL;
             break;
         }
         default:

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9C7166868C0BFB99AB539828"
+               BlueprintIdentifier = "F376F64E0629CDA1FEAB6EE3"
                BuildableName = "libPods-Circle of Death-AFNetworking.a"
                BlueprintName = "Pods-Circle of Death-AFNetworking"
                ReferencedContainer = "container:Pods.xcodeproj">

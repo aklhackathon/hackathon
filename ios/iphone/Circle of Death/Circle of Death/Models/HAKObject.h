@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Enums.h"
 #import "HackathonAPI.h"
+
+@class HackathonAPI;
 
 @interface HAKObject : NSObject
 

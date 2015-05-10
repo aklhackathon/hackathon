@@ -8,19 +8,10 @@
 
 #import <AFNetworking/AFNetworking.h>
 #import <Foundation/Foundation.h>
+#import "Enums.h"
+#import "HAKObject.h"
 
-typedef NS_ENUM(NSInteger, RequestMethod) {
-    RequestMethodGET,
-    RequestMethodPOST,
-    RequestMethodPUT,
-    RequestMethodUPDATE
-};
-
-typedef NS_ENUM(NSInteger, RequestType) {
-    RequestTypeGameplay,
-    RequestTypeRuleset,
-    RequestTypeRules
-};
+@class HAKObject;
 
 @interface HackathonAPI : NSObject
 
@@ -29,6 +20,13 @@ typedef NS_ENUM(NSInteger, RequestType) {
 - (void)getObjectsOfType:(RequestType)type
           withParameters:(NSString *)params
                   method:(RequestMethod)method
-          withCompletion:(void (^)(NSArray *matches, NSError *error))completion;
+          withCompletion:(void (^)(id results, NSError *error))completion;
+
+- (void)createObject:(HAKObject *)object
+      withCompletion:(void (^)(id results, NSError *error))completion;
+
++ (CardType)cardTypeForLetter:(NSString *)letter;
++ (CardType)cardTypeForNumber:(NSInteger)number;
++ (NSString *)labelForCardType:(CardType)cardType;
 
 @end
