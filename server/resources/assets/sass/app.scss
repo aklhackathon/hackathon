@@ -20,11 +20,15 @@
     position: relative;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
-  box-sizing: border-box;
   background: $cg9;
   font-family: $global-font-family;
+  margin: 0;
 }
 
 header{
@@ -32,7 +36,9 @@ header{
     width: 100%;
     color: $primary;
     text-align: center;
+    padding: 1em 0;
 }
+
 footer{
     background: #000;
     position: absolute;
@@ -42,3 +48,9 @@ footer{
     color: $secondary;
     text-align: center;
 }
+
+.row {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
