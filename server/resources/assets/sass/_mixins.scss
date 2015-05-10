@@ -1,0 +1,40 @@
+@mixin bp($point) {
+  $small: "(min-width: 640px)";
+  $medium: "(min-width: 60em)";
+  $large: "(min-width: 80em)";
+
+  @if $point == tablet{
+    @media #{$small} { @content; }
+  }
+  @else if $point == desktop {
+    @media #{$medium} { @content; }
+  }
+  @else if $point == desktopwide {
+    @media #{$large}  { @content; }
+  }
+
+}
+
+
+@mixin button($color: $primary){
+    border: $color 1px solid;
+    border-radius : 3px;
+    background: #fff;
+
+    a {
+        display: block;
+        color: $color;
+        padding: 0.5em;
+        text-transform: uppercase;
+
+    }
+
+    &:hover,
+    &:focus {
+        background: $color;
+        a{
+            color: #fff;
+        }
+    }
+
+}
