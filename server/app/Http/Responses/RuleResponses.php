@@ -4,6 +4,7 @@
 namespace App\Http\Responses;
 
 use App\Http\Transformers\RuleTransformer;
+use App\Rule;
 use Illuminate\Database\Eloquent\Collection;
 use Sorskod\Larasponse\Larasponse;
 
@@ -31,7 +32,7 @@ class RuleResponses {
     public function __construct(Larasponse $response, RuleTransformer $transformer)
     {
         $this->transformer = $transformer;
-        $this->response  = $response;
+        $this->response    = $response;
     }
 
     /**
@@ -40,6 +41,15 @@ class RuleResponses {
      */
     public function collection(Collection $rules)
     {
-        return $this->response->collection($rules, $this->transformer);
+        return $this->response->collection($rules, $this->transformer, 'rules');
+    }
+
+    /**
+     * @param Rule $rule
+     * @return array
+     */
+    public function show(Rule $rule)
+    {
+        return $this->response->item($rule, $this->transformer, 'rule');
     }
 }

@@ -23,7 +23,6 @@ class RuleTransformer extends TransformerAbstract {
             'id'          => $rule->id,
             'name'        => $rule->name,
             'description' => $rule->description,
-            'rank' => $rule->rank
         ];
     }
 }

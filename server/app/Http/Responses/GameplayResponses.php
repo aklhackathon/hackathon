@@ -40,7 +40,7 @@ class GameplayResponses {
      */
     public function show(Gameplay $gameplay)
     {
-        return $this->response->item($gameplay, $this->transformer);
+        return $this->response->item($gameplay, $this->transformer, 'gameplay');
     }
 
     /**
@@ -49,6 +49,6 @@ class GameplayResponses {
      */
     public function create(Gameplay $gameplay)
     {
-        return $this->response->item($gameplay, $this->transformer);
+        return $this->response->item($gameplay, $this->transformer, 'gameplay');
     }
 }

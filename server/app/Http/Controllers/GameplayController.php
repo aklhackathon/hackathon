@@ -5,45 +5,45 @@ namespace App\Http\Controllers;
 
 use App\Gameplay;
 use App\Http\Responses\GameplayResponses;
-use App\Ruleset;
-use App\Services\RulesetReplicator;
+use App\Repositories\GameplayRepository;
 
 class GameplayController extends Controller {
+
     /**
      * @var GameplayResponses
      */
     private $respond;
 
     /**
-     * @param GameplayResponses $respond
+     * @var GameplayRepository
      */
-    public function __construct(GameplayResponses $respond)
+    private $repository;
+
+    /**
+     * @param GameplayResponses  $respond
+     * @param GameplayRepository $repository
+     */
+    public function __construct(GameplayResponses $respond, GameplayRepository $repository)
     {
-        $this->respond = $respond;
+        $this->respond    = $respond;
+        $this->repository = $repository;
     }
 
     public function show($id)
     {
         /** @var Gameplay $gameplay */
-        $gameplay = Gameplay::findOrFail($id);
+        $gameplay = $this->repository->findById($id);
 
         return $this->respond->show($gameplay);
     }
 
+    /**
+     * @return array
+     */
     public function store()
     {
-        /** @var Ruleset $baseRuleset */
-        $baseRuleset = Ruleset::find(1);
-
-        $rulesetReplicator = new RulesetReplicator();
-
-        /** @var Ruleset $ruleset */
-        $ruleset = $rulesetReplicator->replicate($baseRuleset);
-
         /** @var Gameplay $gameplay */
-        $gameplay = new Gameplay();
-        $gameplay->ruleset()->associate($ruleset);
-        $gameplay->save();
+        $gameplay = $this->repository->create();
 
         return $this->respond->create($gameplay);
     }
