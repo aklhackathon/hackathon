@@ -87,6 +87,8 @@
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\logo.png" />
     <AndroidResource Include="Resources\layout\card_detail_view.axml" />
+    <AndroidResource Include="Resources\values\actionbar_style.xml" />
+    <AndroidResource Include="Resources\drawable\button_border.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />

@@ -21,6 +21,7 @@ namespace hackathon.droid.Activities
 
 			try {
 				base.OnCreate(bundle);
+				ActionBar.Hide();
 				SetContentView(Resource.Layout.card_list_view);
 
 				var cardAdapter = new CardListAdapter (this);
