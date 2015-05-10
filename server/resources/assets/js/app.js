@@ -7,12 +7,14 @@ var angular = window.angular || angular;
 angular.module('CircleOfDeath.controllers', []);
 angular.module('CircleOfDeath.directives', []);
 angular.module('CircleOfDeath.factories', []);
+angular.module('CircleOfDeath.models', []);
 angular.module('CircleOfDeath.services', []);
 angular.module('CircleOfDeath.routes', []);
 angular.module('templates', []);
 
 // Adding angular modules
 require('./controllers/controllers');
+require('./models/models');
 require('./routes/routes');
 
 // Adding Angular TemplateCache
@@ -25,6 +27,7 @@ angular.module('CircleOfDeath', [
     'CircleOfDeath.directives',
     'CircleOfDeath.factories',
     'CircleOfDeath.services',
+    'CircleOfDeath.models',
     'CircleOfDeath.routes',
     'templates'
 ]).routes;
