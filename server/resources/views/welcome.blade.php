@@ -40,7 +40,6 @@
 	<body>
 		<div class="container">
 			<div class="content">
-                <?xml version="1.0" encoding="UTF-8" standalone="no"?>
                 <svg width="138px" height="138px" viewBox="0 0 138 138" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
                     <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
                     <title>death + Oval 1</title>
