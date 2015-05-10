@@ -56,7 +56,7 @@ gulp.task('serve', ['watch'], function() {
         notify: false,
         port: 9000,
         server: {
-            baseDir: ['./public/']
+            baseDir: ['./public/', './resources/assets/js/mock-api/']
         }
     });
 
