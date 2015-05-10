@@ -26,7 +26,7 @@ class CardRepository {
     public function all()
     {
         /** @var Collection $cards */
-        $cards = Card::orderBy('rank', 'asc')->get();
+        $cards = Card::orderBy('rank', 'asc')->paginate();
 
         return $cards;
     }

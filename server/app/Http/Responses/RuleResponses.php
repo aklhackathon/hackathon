@@ -5,6 +5,7 @@ namespace App\Http\Responses;
 
 use App\Http\Transformers\RuleTransformer;
 use App\Rule;
+use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Collection;
 use Sorskod\Larasponse\Larasponse;
 
@@ -36,12 +37,12 @@ class RuleResponses {
     }
 
     /**
-     * @param Collection $rules
+     * @param LengthAwarePaginator $rules
      * @return array
      */
-    public function collection(Collection $rules)
+    public function collection(LengthAwarePaginator $rules)
     {
-        return $this->response->collection($rules, $this->transformer, 'rules');
+        return $this->response->paginatedCollection($rules, $this->transformer, 'rules');
     }
 
     /**

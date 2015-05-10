@@ -136,6 +136,9 @@ return [
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 
+
+        'Sorskod\Larasponse\LarasponseServiceProvider',
+
 		/*
 		 * Application Service Providers...
 		 */
@@ -144,7 +147,6 @@ return [
 		'App\Providers\ConfigServiceProvider',
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
-        'Sorskod\Larasponse\LarasponseServiceProvider',
 
 	],
 
