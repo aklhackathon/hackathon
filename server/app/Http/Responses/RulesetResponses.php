@@ -3,8 +3,9 @@
 
 namespace App\Http\Responses;
 
-use App\Gameplay;
 use App\Http\Transformers\RulesetTransformer;
+use App\Ruleset;
+use Sorskod\Larasponse\Larasponse;
 
 /**
  * Class RulesetResponses
@@ -19,10 +20,17 @@ class RulesetResponses {
     private $transformer;
 
     /**
+     * @var Larasponse
+     */
+    private $respond;
+
+    /**
+     * @param Larasponse         $respond
      * @param RulesetTransformer $transformer
      */
-    public function __construct(RulesetTransformer $transformer)
+    public function __construct(Larasponse $respond, RulesetTransformer $transformer)
     {
+        $this->respond     = $respond;
         $this->transformer = $transformer;
     }
 
@@ -32,15 +40,15 @@ class RulesetResponses {
      */
     public function show(Ruleset $ruleset)
     {
-        return $this->transformer->transform($ruleset);
+        return $this->respond->item($ruleset, $this->transformer);
     }
 
     /**
      * @param Ruleset $ruleset
      * @return array
      */
-    public function create(Gameplay $ruleset)
+    public function create(Ruleset $ruleset)
     {
-        return $this->transformer->transform($ruleset);
+        return $this->respond->item($ruleset, $this->transformer);
     }
 }
