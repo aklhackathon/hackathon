@@ -1,0 +1,69 @@
+{
+  "rules": [
+    {
+      "id": 1,
+      "name": "You",
+      "description": "Choose someone to drink"
+    },
+    {
+      "id": 2,
+      "name": "Me",
+      "description": "You drink"
+    },
+    {
+      "id": 3,
+      "name": "Whores",
+      "description": "Women drink"
+    },
+    {
+      "id": 4,
+      "name": "Never have I ever",
+      "description": "Play the game 'Never have I ever' with either a given number of fingers (often 5) or one rotation"
+    },
+    {
+      "id": 5,
+      "name": "Dicks",
+      "description": "Men drink"
+    },
+    {
+      "id": 6,
+      "name": "Heaven",
+      "description": "All point up, last one drinks"
+    },
+    {
+      "id": 7,
+      "name": "Social",
+      "description": "Everybody drinks"
+    },
+    {
+      "id": 8,
+      "name": "Bust a rhyme",
+      "description": "The player who draws the card says a phrase and each person to the left says a phrase that rhymes until one player breaks the rhyme and drinks"
+    },
+    {
+      "id": 9,
+      "name": "Categories",
+      "description": " The player who has drawn a king creates a general category, then players must list items that fit into the chosen category. For example, a player could choose the category 'Candy Bars'. He or she then starts the list by naming a specific candy bar. The other players then go around the table naming other candy bars. This continues until a player fails to name a new candy bar or names one that has already been said, at which point he or she drinks."
+    },
+    {
+      "id": 10,
+      "name": "Questions",
+      "description": "The person who draws asks another player a question, who, in turn, must then straightaway ask a different player a completely unrelated question and so on til someone misses and then drinks"
+    },
+    {
+      "id": 11,
+      "name": "Waterfall",
+      "description": "The player who has drawn an ace starts a Waterfall. The direction of the Waterfall is chosen by the player who drew the ace, then all players start drinking at the same time. The player who drew the ace is the first to stop drinking. When he or she stops, the first player in the direction of the Waterfall is allowed to stop drinking. When that player stops, the player sitting next to them is allowed to stop, and so on until all players have stopped drinking."
+    },
+    {
+      "id": 12,
+      "name": "King's cup",
+      "description": "The first three players to draw a king pour a portion of his/her beer into a communal cup, and the player who draws the fourth king drinks it."
+    },
+    {
+      "id": 13,
+      "name": "Make a rule",
+      "description": "Make a rule that will stick for the rest of the game"
+    }
+  ]
+}

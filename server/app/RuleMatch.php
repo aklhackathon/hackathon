@@ -5,6 +5,9 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Class RuleMatch
  *
+ * @property int id
+ * @property Rule rule
+ * @property Card card
  * @package App
  */
 class RuleMatch extends Model {

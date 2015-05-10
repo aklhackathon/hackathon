@@ -36,5 +36,6 @@ Route::group(
         });
 
         Route::resource('gameplay', 'GameplayController');
+        Route::resource('rule', 'RuleController');
     }
 );

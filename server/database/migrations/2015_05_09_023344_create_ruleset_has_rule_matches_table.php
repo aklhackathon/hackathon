@@ -31,6 +31,6 @@ class CreateRulesetHasRuleMatchesTable extends Migration {
      */
     public function down()
     {
-        Schema::drop('rulset_has_rule_matches');
+        Schema::drop('ruleset_has_rule_matches');
     }
 }

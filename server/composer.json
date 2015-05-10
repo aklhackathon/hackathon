@@ -9,7 +9,7 @@
   "type": "project",
   "require": {
     "laravel/framework": "5.0.*",
-    "league/fractal": "0.13.*@dev"
+    "sorskod/larasponse": "dev-L5"
   },
   "require-dev": {
     "phpunit/phpunit": "~4.0",

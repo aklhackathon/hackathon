@@ -5,6 +5,7 @@ namespace App\Http\Responses;
 
 use App\Gameplay;
 use App\Http\Transformers\GameplayTransformer;
+use Sorskod\Larasponse\Larasponse;
 
 /**
  * Class GameplayResponses
@@ -19,11 +20,18 @@ class GameplayResponses {
     private $transformer;
 
     /**
-     * @param GameplayTransformer $transformer
+     * @var Larasponse
      */
-    public function __construct(GameplayTransformer $transformer)
+    private $response;
+
+    /**
+     * @param GameplayTransformer $transformer
+     * @param Larasponse          $response
+     */
+    public function __construct(GameplayTransformer $transformer, Larasponse $response)
     {
         $this->transformer = $transformer;
+        $this->response    = $response;
     }
 
     /**
@@ -32,7 +40,7 @@ class GameplayResponses {
      */
     public function show(Gameplay $gameplay)
     {
-        return $this->transformer->transform($gameplay);
+        return $this->response->item($gameplay, $this->transformer);
     }
 
     /**
@@ -41,6 +49,6 @@ class GameplayResponses {
      */
     public function create(Gameplay $gameplay)
     {
-        return $this->transformer->transform($gameplay);
+        return $this->response->item($gameplay, $this->transformer);
     }
 }

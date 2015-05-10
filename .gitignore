@@ -1,2 +1,4 @@
 server/.idea
 .idea
+.DS_STORE
+**/.DS_Store
