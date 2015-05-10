@@ -8,7 +8,22 @@ angular.module('CircleOfDeath.controllers').controller('LandingCtrl', function($
 	// Init scope vars
 	$scope.cards = [];
 	$scope.state = 'in-progress';
-	$scope.showCardInfo = false;
+	$scope.toggleCardInfo = false;
+	$scope.selectedCard = null;
+
+	$scope.clickShowCard = function(cardId) {
+		$scope.toggleCardInfo = !$scope.toggleCardInfo;
+
+		if ($scope.toggleCardInfo) {
+			angular.forEach($scope.cards, function(card) {
+				if (card.id === cardId) {
+					$scope.selectedCard = card;
+				}
+			});
+		} else {
+			$scope.selectedCard = null;
+		}
+	};
 
 	_initFetchGameplay = function() {
 		$http.get(GAMEPLAY_API_ENDPOINT)
@@ -18,6 +33,9 @@ angular.module('CircleOfDeath.controllers').controller('LandingCtrl', function($
 				});
 
 				$scope.state = 'ready';
+			})
+			.catch(function() {
+				// @todo handle error
 			});
 	};
 
