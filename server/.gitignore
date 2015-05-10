@@ -3,3 +3,13 @@
 /bower_components
 .env
 .idea
+
+# JS Files to ignore
+/resources/assets/js/vendor.js
+/resources/assets/js/templates.js
+/resources/assets/js/browserified/*
+
+# Public Files to ignore
+/public/js/*
+/public/css/*
+
