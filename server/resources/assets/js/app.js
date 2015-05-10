@@ -13,6 +13,7 @@ angular.module('templates', []);
 
 // Adding angular modules
 require('./controllers/controllers');
+require('./directives/directives');
 require('./routes/routes');
 
 // Adding Angular TemplateCache

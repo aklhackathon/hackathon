@@ -1,0 +1,25 @@
+@import "variables";
+
+.selected-card-base {
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    background: #FFF;
+    border: 1px solid $cg1;
+    position: relative;
+}
+
+.selected-card-number--top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.selected-card-number--bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotateZ(180deg);
+}
+
+
