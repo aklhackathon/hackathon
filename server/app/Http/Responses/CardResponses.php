@@ -5,6 +5,7 @@ namespace App\Http\Responses;
 
 use App\Card;
 use App\Http\Transformers\CardTransformer;
+use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Collection;
 use Sorskod\Larasponse\Larasponse;
 
@@ -36,12 +37,12 @@ class CardResponses {
     }
 
     /**
-     * @param Collection $cards
+     * @param LengthAwarePaginator $cards
      * @return array
      */
-    public function collection(Collection $cards)
+    public function collection(LengthAwarePaginator $cards)
     {
-        return $this->respond->collection($cards, $this->transformer, 'cards');
+        return $this->respond->paginatedCollection($cards, $this->transformer, 'cards');
     }
 
     /**

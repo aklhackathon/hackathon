@@ -26,7 +26,7 @@ class RuleRepository {
     public function all()
     {
         /** @var Collection $rules */
-        $rules = Rule::all();
+        $rules = Rule::paginate();
 
         return $rules;
     }
